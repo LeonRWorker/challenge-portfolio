@@ -11,7 +11,7 @@ export const Content = styled.div`
     @media (max-width: 1023px) {
         gap: 20px;
         width: 90%;
-        height: auto;
+        min-height: auto;
     }
 `
 export const Card = styled.div`
