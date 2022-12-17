@@ -6,6 +6,7 @@ import axios from "axios";
 interface iFolders {
   id: number
   name: string
+  clone_url: string
   description: string
   stargazers_count: number
   watchers_count: number
@@ -23,6 +24,9 @@ export default function Projects () {
       console.log(error)
     })
   }
+  const handleRedirect = (page: string, target: string) => {
+    window.open(page, target)
+  }
   useEffect(() => {
     handleRepositories()
   }, [])
@@ -35,7 +39,7 @@ export default function Projects () {
         </DropDown>
         { show && (<Folders>
           { git.map((project: iFolders, index: number) => (
-            <Folder key={project.id}>
+            <Folder key={project.id} onClick={() => { handleRedirect(project.clone_url, '_blank') }}>
               <Project>
                 <FiFolder />
                 { project.name }
