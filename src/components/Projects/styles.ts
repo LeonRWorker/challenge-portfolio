@@ -4,8 +4,24 @@ export const Content = styled.div`
     gap: 20px;
     width: 100%;
     display: flex;
+    padding-right: 20px;
     align-items: center;
     flex-direction: column;
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+    ::-webkit-scrollbar-track {
+        background: #888;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #302F3D;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: #302F3D;
+    }
+    @media (max-width: 1023px) {
+        padding-right: 0px;
+    }
     /* width: calc(100% - 100px); */
 `
 export const Text = styled.span``

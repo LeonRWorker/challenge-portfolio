@@ -1,16 +1,20 @@
+import { useState } from "react";
 import { Content, Block, DropDown, Legend, Text, Nothing } from "./styles";
 
 export default function Posts () {
+  const [show, setShow] = useState(true)
   return (
     <Content>
       <Block>
-        <DropDown>
+        <DropDown onClick={() => { setShow(show => !show) }}>
           <Legend>Posts Recentes</Legend>
           <Text>Veja todos</Text>
         </DropDown>
-        <Nothing>
-          Ainda não há posts disponíveis
-        </Nothing>
+        { !show && (
+          <Nothing>
+            Ainda não há posts disponíveis
+          </Nothing>
+        ) }
       </Block>
     </Content>
   )

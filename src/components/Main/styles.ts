@@ -12,8 +12,8 @@ export const Content = styled.div`
     gap: 20px;
     width: 100%;
     display: flex;
+    padding: 20px 0px;
     min-height: 100vh;
-    align-items: center;
     flex-direction: row;
     justify-content: center;
     background-color: #22212C;
@@ -27,10 +27,11 @@ export const Content = styled.div`
 export const Section = styled.aside`
     gap: 20px;
     width: 75%;
-    height: 94vh;
     display: flex;
+    min-height: 94vh;
     align-items: center;
     flex-direction: column;
+    justify-content: flex-start;
     @media (max-width: 1023px) {
         gap: 20px;
         width: 90%;

@@ -4,9 +4,13 @@ export const Content = styled.div`
     gap: 20px;
     width: 100%;
     display: flex;
+    padding-right: 20px;
     align-items: center;
     flex-direction: column;
     /* width: calc(100% - 100px); */
+    @media (max-width: 1023px) {
+        padding-right: 0px;
+    }
 `
 export const Text = styled.span``
 export const Legend = styled.span``
