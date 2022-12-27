@@ -11,7 +11,7 @@ export default function Aside () {
       <Card>
         <Dev src={Profile} />
         <Name>Leonardo Marques</Name>
-        <Office>Full Stack Development</Office>
+        <Office>Front End Development</Office>
       </Card>
       <Card>
         <Link>
