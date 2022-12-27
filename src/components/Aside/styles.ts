@@ -79,8 +79,8 @@ export const Tecnologies = styled.div`
         padding: 8px 8px;
         text-align: center;
         border-radius: 20px;
+        background-color: white;
         text-transform: uppercase;
-        background-color: #CB92B1;
     }
 `
 export const Icon = styled.span`
