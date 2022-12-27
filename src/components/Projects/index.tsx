@@ -13,13 +13,20 @@ interface iFolders {
   language: string
 }
 
+
 export default function Projects () {
-  const [git, setGit] = useState([])
+  const [git, setGit] = useState<iFolders []>([])
   const [show, setShow] = useState(true)
   const baseURL = ' https://api.github.com'
   const handleRepositories = () => {
     axios.get(`${baseURL}/users/leonrworker/repos`).then(response => {
-      setGit(response.data)
+      const prevGit: iFolders [] = []
+      response.data.forEach((repository: iFolders) => {
+        if (repository.name != 'LeonRWorker') {
+          prevGit.push(repository)
+        }
+      })
+      setGit(prevGit)
     }).catch(error => {
       console.log(error)
     })
