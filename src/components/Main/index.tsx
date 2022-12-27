@@ -11,7 +11,7 @@ export default function Main () {
         <Aside />
         <Section>
           <Projects /> 
-          <Posts /> 
+          {/* <Posts />  */}
         </Section>
       </Content>
     </Container>
