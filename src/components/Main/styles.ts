@@ -14,6 +14,7 @@ export const Content = styled.div`
     display: flex;
     padding: 20px 0px;
     min-height: 100vh;
+    align-items: center;
     flex-direction: row;
     justify-content: center;
     background-color: #22212C;
