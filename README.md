@@ -1,6 +1,6 @@
 # Sobre o projeto
 
-Esta aplicação é um exemplo de portfólio, desafio proposto pela RocketSeat com intuito de aprender novas tecnologias, agregando na experiência acadêmica e profissinal como também atrair empresa com um portfólio de projetos realizados, demonstrando a capacidade do desenvolvedor.
+Esta aplicação é um exemplo de portfólio, desafio proposto pela RocketSeat com intuito de aprender novas tecnologias, agregando na experiência acadêmica e profissinal como também atrair empresas através de projetos realizados, demonstrando a capacidade do desenvolvedor.
 
 ## 💻 Tecnologias
 
